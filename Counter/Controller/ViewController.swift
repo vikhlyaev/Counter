@@ -26,7 +26,8 @@ class ViewController: UIViewController {
         updateUI()
     }
     
-    @IBAction func resetButton(_ sender: UIButton) {
+    
+    @IBAction func resetButton(_ sender: UIBarButtonItem) {
         counter = 0
         updateUI()
     }

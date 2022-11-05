@@ -56,15 +56,55 @@
 		0A8345A02916B6C700240423 /* Counter */ = {
 			isa = PBXGroup;
 			children = (
+				0A8345B52916B81800240423 /* Application */,
+				0A8345B72916B82F00240423 /* View */,
+				0A8345B62916B82300240423 /* Controller */,
+				0A8345B82916B83900240423 /* Resources */,
+				0A8345B92916B84400240423 /* Supporting Files */,
+			);
+			path = Counter;
+			sourceTree = "<group>";
+		};
+		0A8345B52916B81800240423 /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				0A8345A12916B6C700240423 /* AppDelegate.swift */,
 				0A8345A32916B6C700240423 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0A8345B62916B82300240423 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				0A8345A52916B6C700240423 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0A8345B72916B82F00240423 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				0A8345A72916B6C700240423 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A8345B82916B83900240423 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				0A8345AA2916B6CB00240423 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0A8345B92916B84400240423 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				0A8345AC2916B6CB00240423 /* LaunchScreen.storyboard */,
 				0A8345AF2916B6CB00240423 /* Info.plist */,
 			);
-			path = Counter;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +329,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VEWJJ8ZGBW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Counter/Info.plist;
+				INFOPLIST_FILE = "Counter/Supporting Files/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Counter;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -322,7 +362,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VEWJJ8ZGBW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Counter/Info.plist;
+				INFOPLIST_FILE = "Counter/Supporting Files/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Counter;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

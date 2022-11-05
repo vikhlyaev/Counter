@@ -42,13 +42,28 @@
                                     <action selector="increaseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="grb-nR-yaP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PqM-rL-4LS" userLabel="Reset Button">
+                                <rect key="frame" x="330" y="59" width="47" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="A4P-a2-tDj"/>
+                                    <constraint firstAttribute="height" constant="35" id="p7r-uE-myW"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.clockwise" catalog="system"/>
+                                <connections>
+                                    <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hPR-w6-X3k"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.97254901960784312" green="0.83529411764705885" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="opU-BD-hV9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="20U-zT-FjI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PqM-rL-4LS" secondAttribute="trailing" constant="16" id="3BO-nP-sUx"/>
                             <constraint firstItem="gY4-tG-2Xk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="DRY-Gf-g16"/>
+                            <constraint firstItem="PqM-rL-4LS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IdZ-ZQ-DZV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gY4-tG-2Xk" secondAttribute="trailing" constant="16" id="Ikz-2n-H7i"/>
                             <constraint firstItem="opU-BD-hV9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="QkM-n6-tSG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MKr-Bm-2Kv" secondAttribute="bottom" id="UbA-wu-wTC"/>
@@ -56,6 +71,7 @@
                             <constraint firstItem="gY4-tG-2Xk" firstAttribute="top" secondItem="opU-BD-hV9" secondAttribute="bottom" constant="8" id="ewO-Su-h77"/>
                             <constraint firstItem="MKr-Bm-2Kv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="gPh-5G-eHI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="opU-BD-hV9" secondAttribute="trailing" constant="16" id="hpz-5i-aoC"/>
+                            <constraint firstItem="PqM-rL-4LS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="330" id="iV3-0P-xux"/>
                         </constraints>
                     </view>
                     <connections>
@@ -67,4 +83,7 @@
             <point key="canvasLocation" x="138" y="4"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow.clockwise" catalog="system" width="113" height="128"/>
+    </resources>
 </document>

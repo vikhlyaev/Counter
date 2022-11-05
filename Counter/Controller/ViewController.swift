@@ -25,5 +25,10 @@ class ViewController: UIViewController {
         counter += 1
         updateUI()
     }
+    
+    @IBAction func resetButton(_ sender: UIButton) {
+        counter = 0
+        updateUI()
+    }
 }
 

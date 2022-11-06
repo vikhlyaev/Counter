@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var counterLabel: UILabel!
+    @IBOutlet private weak var counterLabel: UILabel!
     private var counter = 0
     
     override func viewDidLoad() {
@@ -21,13 +21,13 @@ class ViewController: UIViewController {
         counterLabel.text = "\(counter)"
     }
     
-    @IBAction func increaseButton(_ sender: UIButton) {
+    @IBAction private func increaseButton(_ sender: UIButton) {
         counter += 1
         updateUI()
     }
     
     
-    @IBAction func resetButton(_ sender: UIBarButtonItem) {
+    @IBAction private func resetButton(_ sender: UIBarButtonItem) {
         counter = 0
         updateUI()
     }
